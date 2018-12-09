@@ -1,0 +1,89 @@
+.services
+  height: auto
+  &__background
+    background-color: $secondary-background
+  &__title
+    padding-top: 99px
+    margin: 0 auto
+    max-width: 80%
+    display: flex
+    justify-content: center
+    font-size: $normal__font-size
+    color: $secondary-color
+    font-family: $secondary__font-family
+    font-weight: $font-weight__extra-bold
+    text-transform: uppercase
+    letter-spacing: -0.65px
+  &__text
+    position: relative
+    padding-top: 16px
+    margin: 0 auto
+    max-width: 80%
+    display: flex
+    justify-content: center
+    text-align: center
+    opacity: 0.8
+    color: $secondary-color
+    font-family: $secondary__font-family
+    font-size: $extra-tiny__font-size
+    font-weight: $font-weight__normal
+    &:after
+      content: ''
+      position: absolute
+      width: 40px
+      border-top: 2px solid $secondary-color
+      opacity: 0.8
+  &__content
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: center
+
+  &__type
+    padding: 59px 15px 109px 15px
+    max-width: 250px
+
+
+    &-icon
+      margin: 0 auto
+      width: 120px
+      height: 120px
+      border-radius: 100px
+      color: $secondary-background
+      background-image: radial-gradient(circle 60px at center, #485563 0%, #29323c 100%)
+      display: flex
+      justify-content: center
+      align-items: center
+      &-pc
+        width: 60px
+        height: 41px
+        background: url("../img/pc.png") center / cover no-repeat
+      &-mix
+        width: 42px
+        height: 45px
+        background: url("../img/mix.png") center / cover no-repeat
+      &-map
+        width: 55px
+        height: 55px
+        background: url("../img/map.png") center / cover no-repeat
+      &-heart
+        width: 61px
+        height: 52px
+        background: url("../img/heart.png") center / cover no-repeat
+    &-title
+      padding-top: 39px
+      padding-bottom: 24px
+      color: $secondary-color
+      font-family: $default__font-family
+      font-size: $tiny__font-size
+      font-weight: $font-weight__bold
+      text-transform: uppercase
+      text-align: center
+    &-text
+      opacity: 0.8
+      color: $secondary-color
+      font-family: $secondary__font-family
+      font-size: $extra-tiny__font-size
+      font-weight: $font-weight__normal
+      line-height: 22px
+      text-align: center
