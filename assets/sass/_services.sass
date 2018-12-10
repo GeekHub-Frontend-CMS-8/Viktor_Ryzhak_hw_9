@@ -1,49 +1,24 @@
 .services
   height: auto
+  text-align: center
   &__background
     background-color: $secondary-background
   &__title
-    padding-top: 99px
-    margin: 0 auto
-    max-width: 80%
-    display: flex
-    justify-content: center
-    font-size: $normal__font-size
+    @include title-content
     color: $secondary-color
-    font-family: $secondary__font-family
-    font-weight: $font-weight__extra-bold
-    text-transform: uppercase
-    letter-spacing: -0.65px
-  &__text
-    position: relative
-    padding-top: 16px
-    margin: 0 auto
-    max-width: 80%
-    display: flex
-    justify-content: center
-    text-align: center
-    opacity: 0.8
+  &__subtitle
+    @include subtitle-content
     color: $secondary-color
-    font-family: $secondary__font-family
-    font-size: $extra-tiny__font-size
-    font-weight: $font-weight__normal
     &:after
-      content: ''
-      position: absolute
-      width: 40px
-      border-top: 2px solid $secondary-color
-      opacity: 0.8
+      @include after-border
   &__content
     display: flex
     flex-wrap: wrap
     flex-direction: row
     justify-content: center
-
   &__type
     padding: 59px 15px 109px 15px
     max-width: 250px
-
-
     &-icon
       margin: 0 auto
       width: 120px
