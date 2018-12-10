@@ -148,7 +148,7 @@ button {
     font-weight: 400;
     color: #29323c; }
     .services__subtitle:after {
-      content: '';
+      content: "";
       display: block;
       padding-top: 20px;
       width: 40px;
@@ -235,7 +235,7 @@ button {
     font-weight: 400;
     color: #29323c; }
     .works__subtitle:after {
-      content: '';
+      content: "";
       display: block;
       padding-top: 20px;
       width: 40px;
@@ -269,13 +269,13 @@ button {
         opacity: 0.9; }
       .works__product-text-title {
         padding-bottom: 11px;
-        color: #f2f2f2;
+        color: #e8e8e8;
         font-family: Montserrat, sans-serif;
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase; }
       .works__product-text-subtitle {
-        color: #f2f2f2;
+        color: #e8e8e8;
         font-family: Montserrat, sans-serif;
         font-size: 14px;
         font-weight: 400; }
@@ -339,3 +339,58 @@ button {
       background: url("../img/15.jpg") no-repeat;
       width: 320px;
       height: 200px; }
+
+.clients {
+  height: auto;
+  text-align: center; }
+  .clients__background {
+    background-color: #fff; }
+  .clients__title {
+    padding-top: 99px;
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    font-size: 26px;
+    font-family: Open Sans, sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.65px;
+    color: #29323c; }
+  .clients__subtitle {
+    padding-top: 16px;
+    margin: 0 auto;
+    max-width: 80%;
+    display: inline-block;
+    opacity: 0.8;
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #29323c; }
+    .clients__subtitle:after {
+      content: "";
+      display: block;
+      padding-top: 20px;
+      width: 40px;
+      margin: 0 auto;
+      border-bottom: 2px solid #29323c;
+      opacity: 0.8; }
+  .clients__text {
+    padding-top: 59px;
+    color: #29323c;
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; }
+    .clients__text:after {
+      content: '"';
+      display: block;
+      padding-top: 20px;
+      width: 40px;
+      margin: 0 auto;
+      opacity: 0.5;
+      color: #29323c;
+      font-family: Montserrat, sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      font-style: italic; }
