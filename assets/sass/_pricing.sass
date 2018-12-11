@@ -1,0 +1,14 @@
+.pricing
+  height: auto
+  text-align: center
+  &__background
+    background-color: $default-background
+  &__title
+    @include title-content
+    color: $secondary-color
+  &__subtitle
+    @include subtitle-content
+    color: $secondary-color
+    &:after
+      @include after-border
+      border-bottom: 2px solid $secondary-color

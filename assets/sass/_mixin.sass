@@ -1,7 +1,25 @@
+@mixin button
+    display: flex
+    justify-content: center
+    &-text
+      background-color: transparent
+      border: 1px solid $default-color
+      border-radius: 100px
+      font-family: $secondary__font-family
+      font-size: $extra-tiny__font-size
+      font-weight: $font-weight__bold
+      color: $default-color
+      text-transform: uppercase
+      text-align: center
+      padding: 15px 25px
 
 @mixin small-icon
   width: 72px
   height: 71px
+
+@mixin avatar-icon
+  width: 270px
+  height: 270px
 
 @mixin normal-icon
   width: 320px
@@ -35,7 +53,6 @@
   padding-top: 20px
   width: 40px
   margin: 0 auto
-  border-bottom: 2px solid $secondary-color
   opacity: 0.8
 
 @mixin hover-booming-show
@@ -66,3 +83,13 @@
       font-family: $default__font-family
       font-size: $extra-tiny__font-size
       font-weight: $font-weight__normal
+    &-subtext
+      color: $default-color
+      font-family: $default__font-family
+      font-size: $extra-tiny__font-size
+      font-weight: $font-weight__bold
+      text-transform: uppercase
+      letter-spacing: 0.33px
+      &:after
+        @include after-border
+        border-bottom: 2px solid $default-color
