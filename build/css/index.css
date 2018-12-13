@@ -68,15 +68,15 @@ button {
     justify-content: center; }
     .hero__content-button-text {
       background-color: transparent;
-      border: 1px solid #e8e8e8;
       border-radius: 100px;
       font-family: Open Sans, sans-serif;
       font-size: 14px;
       font-weight: 700;
-      color: #e8e8e8;
       text-transform: uppercase;
       text-align: center;
-      padding: 15px 25px; }
+      padding: 15px 25px;
+      color: #e8e8e8;
+      border: 1px solid #e8e8e8; }
   .hero__content-anchor {
     padding-top: 144px;
     padding-bottom: 100px;
@@ -495,15 +495,15 @@ button {
     justify-content: center; }
     .team__button-text {
       background-color: transparent;
-      border: 1px solid #e8e8e8;
       border-radius: 100px;
       font-family: Open Sans, sans-serif;
       font-size: 14px;
       font-weight: 700;
-      color: #e8e8e8;
       text-transform: uppercase;
       text-align: center;
-      padding: 15px 25px; }
+      padding: 15px 25px;
+      color: #e8e8e8;
+      border: 1px solid #e8e8e8; }
 
 .clients {
   height: auto;
@@ -682,6 +682,107 @@ button {
       margin: 0 auto;
       opacity: 0.8;
       border-bottom: 2px solid #29323c; }
+  .pricing__subscription {
+    padding-top: 61px;
+    padding-bottom: 116px;
+    display: flex; }
+    .pricing__subscription-content {
+      border: 1px solid rgba(221, 221, 221, 0.5); }
+      .pricing__subscription-content:hover {
+        position: relative;
+        top: -36px;
+        border-top: 5px solid #29323c; }
+        .pricing__subscription-content:hover-title {
+          padding-top: 65px; }
+    .pricing__subscription-title {
+      padding-top: 29px;
+      color: #485563;
+      font-family: Montserrat, sans-serif;
+      font-size: 20px;
+      font-weight: 700; }
+    .pricing__subscription-price {
+      padding-top: 23px;
+      display: block;
+      color: #485563;
+      font-family: Montserrat, sans-serif;
+      font-size: 45px;
+      font-weight: 400; }
+    .pricing__subscription-subtitle {
+      padding-top: 8px;
+      padding-bottom: 32px;
+      display: block;
+      color: #29323c;
+      font-family: Open Sans, sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      border-bottom: 1px solid #e8e8e8; }
+    .pricing__subscription-text {
+      padding-top: 83px;
+      color: #29323c;
+      font-family: Open Sans, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 40px;
+      padding-left: 76px;
+      padding-right: 76px; }
+    .pricing__subscription-button {
+      padding-top: 91px;
+      padding-bottom: 36px;
+      display: flex;
+      justify-content: center; }
+      .pricing__subscription-button-text {
+        background-color: #29323c;
+        border-radius: 100px;
+        font-family: Open Sans, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 15px 25px;
+        color: #e8e8e8;
+        border: 1px solid #29323c; }
+
+.contact {
+  height: auto;
+  display: flex;
+  flex-direction: row; }
+  .contact__map {
+    width: 50%;
+    text-align: right;
+    height: 100%; }
+  .contact__form {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+    .contact__form-background {
+      background: url("../img/form_bg.jpg") center/cover no-repeat; }
+    .contact__form-content {
+      padding-top: 113px;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding-right: 0;
+      padding-left: 190px;
+      box-sizing: border-box; }
+      .contact__form-content-window {
+        padding-bottom: 25px;
+        display: flex;
+        justify-content: space-between; }
+        .contact__form-content-window-name {
+          padding-top: 10px;
+          color: #e8e8e8;
+          font-family: Montserrat, sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          letter-spacing: -0.35px; }
+        .contact__form-content-window-input {
+          width: 100%;
+          max-width: 300px;
+          height: 45px;
+          background-color: transparent;
+          border: 1px solid rgba(242, 242, 242, 0.7); }
 
 .brands {
   height: auto;

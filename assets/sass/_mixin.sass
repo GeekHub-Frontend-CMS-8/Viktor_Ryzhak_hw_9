@@ -3,15 +3,30 @@
     justify-content: center
     &-text
       background-color: transparent
-      border: 1px solid $default-color
       border-radius: 100px
       font-family: $secondary__font-family
       font-size: $extra-tiny__font-size
       font-weight: $font-weight__bold
-      color: $default-color
       text-transform: uppercase
       text-align: center
       padding: 15px 25px
+      color: $default-color
+      border: 1px solid $default-color
+
+@mixin button-dark
+  display: flex
+  justify-content: center
+  &-text
+    background-color: $secondary-color
+    border-radius: 100px
+    font-family: $secondary__font-family
+    font-size: $extra-tiny__font-size
+    font-weight: $font-weight__bold
+    text-transform: uppercase
+    text-align: center
+    padding: 15px 25px
+    color: $default-color
+    border: 1px solid $secondary-color
 
 @mixin small-icon
   width: 72px
@@ -93,3 +108,10 @@
       &:after
         @include after-border
         border-bottom: 2px solid $default-color
+
+@mixin hover-subscription
+    position: relative
+    top: -36px
+    border-top: 5px solid $secondary-color
+    &-title
+      padding-top: 65px
