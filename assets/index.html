@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>OENRIQUE</title>
+    <title>ZET</title>
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,700i|Open+Sans:300,400,800"
           rel="stylesheet">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/index.css" type="text/css">
 </head>
 <body>
-    <section class="hero hero__background hero__background-opacity">
+    <div class="hero hero__background hero__background-opacity">
         <div class="container">
             <div class="hero__header">
                 <div class="logo">
@@ -45,7 +45,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="services services__background" id="services">
         <div class="container">
@@ -573,7 +573,7 @@
 
     <section class="contact">
         <div class="contact__map">
-            <iframe width="800" height="700" src="https://maps.google.com/maps?width=700&amp;
+            <iframe class="contact__map-bg" width="5000" height="1000" src="https://maps.google.com/maps?width=700&amp;
             height=440&amp;hl=en&amp;q=jakarta+(jakarta)&amp;ie=UTF8&amp;t=p&amp;z=11&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
             </iframe>
 
@@ -598,6 +598,9 @@
                         <span class="contact__form-content-window-name">Message</span>
                         <input class="contact__form-content-window-input" type="text" name="message" id="message">
                     </label>
+                    <label class="contact__form-button" for="message">
+                        <input class="contact__form-button-text" type="submit" name="submit" id="submit">
+                    </label>
                 </form>
             </div>
         </div>
@@ -605,6 +608,49 @@
 
     </section>
 
-    <
+    <section class="footer footer__background">
+        <div class="container footer__item">
+            <div class="footer__item-info">
+                <div class="logo">
+                    <span>
+                        zet
+                    </span>
+                </div>
+                <div class="footer__item-info-text">
+                    <span>
+                        © Copyright 2015. Allright Reserved
+                    </span>
+                </div>
+            </div>
+
+            <div class="footer__item-social">
+                <div class="footer__item-social-text">
+                    <span>
+                        Stay In Touch
+                    </span>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com" class="footer__item-social-link">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://twitter.com" class="footer__item-social-link">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+
+                    <a href="https://plus.google.com" class="footer__item-social-link">
+                        <i class="fab fa-google-plus-square"></i>
+                    </a>
+
+                    <a href="https://dribbble.com" class="footer__item-social-link">
+                        <i class="fab fa-dribbble-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 </body>
 </html>
