@@ -702,6 +702,9 @@ button {
         .pricing__subscription-content {
           margin-top: 20px;
           margin-bottom: 20px; } }
+      @media (max-width: 400px) {
+        .pricing__subscription-content {
+          max-width: 286px; } }
       .pricing__subscription-content:hover {
         border-top: transparent; }
         .pricing__subscription-content:hover:before {
@@ -743,6 +746,19 @@ button {
       line-height: 40px;
       padding-left: 76px;
       padding-right: 76px; }
+      @media (max-width: 800px) {
+        .pricing__subscription-text {
+          line-height: 30px; } }
+      @media (max-width: 400px) {
+        .pricing__subscription-text {
+          line-height: 20px;
+          padding-left: 50px;
+          padding-right: 50px; } }
+      @media (max-width: 300px) {
+        .pricing__subscription-text {
+          line-height: 20px;
+          padding-left: 20px;
+          padding-right: 20px; } }
     .pricing__subscription-button {
       padding-top: 91px;
       padding-bottom: 36px;
@@ -921,17 +937,38 @@ button {
     padding-top: 45px;
     padding-bottom: 45px;
     display: flex;
+    align-items: center;
     justify-content: space-between; }
+    @media (max-width: 600px) {
+      .footer__item {
+        flex-direction: column; } }
     .footer__item-info {
       display: flex;
       align-items: center; }
+      @media (max-width: 800px) {
+        .footer__item-info {
+          flex-direction: column; } }
       .footer__item-info-text {
+        display: flex;
+        justify-content: center;
         padding-left: 30px; }
+        @media (max-width: 800px) {
+          .footer__item-info-text {
+            padding-top: 10px; } }
     .footer__item-social {
       display: flex;
       align-items: center; }
+      @media (max-width: 800px) {
+        .footer__item-social {
+          flex-direction: column; } }
+      @media (max-width: 600px) {
+        .footer__item-social {
+          padding-top: 20px; } }
       .footer__item-social-text {
         padding-right: 30px; }
+        @media (max-width: 800px) {
+          .footer__item-social-text {
+            padding-bottom: 10px; } }
       .footer__item-social-link {
         font-size: 36px;
         padding-left: 5px;
