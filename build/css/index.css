@@ -686,14 +686,32 @@ button {
     padding-top: 61px;
     padding-bottom: 116px;
     display: flex; }
+    @media (max-width: 1200px) {
+      .pricing__subscription {
+        max-width: 1200px;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center; } }
     .pricing__subscription-content {
-      border: 1px solid rgba(221, 221, 221, 0.5); }
+      border: 1px solid rgba(221, 221, 221, 0.5);
+      position: relative;
+      width: 100%;
+      max-width: 386px; }
+      @media (max-width: 1200px) {
+        .pricing__subscription-content {
+          margin-top: 20px;
+          margin-bottom: 20px; } }
       .pricing__subscription-content:hover {
-        position: relative;
-        top: -36px;
-        border-top: 5px solid #29323c; }
-        .pricing__subscription-content:hover-title {
-          padding-top: 65px; }
+        border-top: transparent; }
+        .pricing__subscription-content:hover:before {
+          content: "";
+          position: absolute;
+          display: block;
+          top: -35px;
+          width: 100%;
+          margin: 0 auto;
+          border-top: 5px solid #29323c; }
     .pricing__subscription-title {
       padding-top: 29px;
       color: #485563;
@@ -746,11 +764,15 @@ button {
   height: auto;
   display: flex;
   flex-direction: row; }
+  @media (max-width: 1200px) {
+    .contact {
+      flex-direction: column-reverse; } }
   .contact__map {
     width: 50%;
     text-align: right;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    align-items: stretch; }
     .contact__map-bg {
       position: absolute;
       top: 0;

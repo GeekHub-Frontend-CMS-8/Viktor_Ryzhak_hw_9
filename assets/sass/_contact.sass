@@ -2,11 +2,14 @@
   height: auto
   display: flex
   flex-direction: row
+  @media (max-width: 1200px)
+    flex-direction: column-reverse
   &__map
     width: 50%
     text-align: right
     position: relative
     overflow: hidden
+    align-items: stretch
     &-bg
       position: absolute
       top: 0

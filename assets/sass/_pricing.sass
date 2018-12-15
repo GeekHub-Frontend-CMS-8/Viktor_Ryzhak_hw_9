@@ -16,9 +16,23 @@
     padding-top: 61px
     padding-bottom: 116px
     display: flex
+    @media (max-width: 1200px)
+      max-width: 1200px
+      flex-wrap: wrap
+      flex-direction: column-reverse
+      justify-content: center
+      align-items: center
     &-content
       border: 1px solid rgba(221, 221, 221, 0.5)
+      position: relative
+      width: 100%
+      max-width: 386px
+      @media (max-width: 1200px)
+        margin-top: 20px
+        margin-bottom: 20px
+
       &:hover
+        border-top: transparent
         @include hover-subscription
     &-title
       padding-top: 29px

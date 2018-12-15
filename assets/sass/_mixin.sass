@@ -110,8 +110,14 @@
         border-bottom: 2px solid $default-color
 
 @mixin hover-subscription
-    position: relative
-    top: -36px
+
+  &:before
+    content: ""
+    position: absolute
+    display: block
+    top: -35px
+    width: 100%
+    margin: 0 auto
     border-top: 5px solid $secondary-color
-    &-title
-      padding-top: 65px
+
+
