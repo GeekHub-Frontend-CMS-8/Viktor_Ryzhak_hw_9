@@ -867,6 +867,45 @@ button {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap; }
+    @media (max-width: 1000px) {
+      .brands__icon {
+        flex-direction: column;
+        justify-content: center; } }
+    .brands__icon-coca-cola {
+      height: 44px;
+      width: 135px;
+      background: url("../img/Coca-Cola-logo.png") center/cover no-repeat; }
+      @media (max-width: 1000px) {
+        .brands__icon-coca-cola {
+          margin-top: 40px; } }
+    .brands__icon-dropbox {
+      height: 42px;
+      width: 154px;
+      background: url("../img/Dropbox_logo.png") center/cover no-repeat; }
+      @media (max-width: 1000px) {
+        .brands__icon-dropbox {
+          margin-top: 40px; } }
+    .brands__icon-intel {
+      height: 64px;
+      width: 96px;
+      background: url("../img/Intel-logo.png") center/cover no-repeat; }
+      @media (max-width: 1000px) {
+        .brands__icon-intel {
+          margin-top: 40px; } }
+    .brands__icon-zendesk {
+      height: 39px;
+      width: 166px;
+      background: url("../img/Zendesk_logo.png") center/cover no-repeat; }
+      @media (max-width: 1000px) {
+        .brands__icon-zendesk {
+          margin-top: 40px; } }
+    .brands__icon-nokia {
+      height: 25px;
+      width: 150px;
+      background: url("../img/Nokia_logo.png") center/cover no-repeat; }
+      @media (max-width: 1000px) {
+        .brands__icon-nokia {
+          margin-top: 40px; } }
 
 .footer {
   height: auto;
